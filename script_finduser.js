@@ -37,6 +37,11 @@ function search(){
                 cell2.innerHTML = data[i][1];
                 cell3.innerHTML = data[i][2];
                 cell4.innerHTML = data[i][3];
+
+                cell1.setAttribute("title", data[i][0]);
+                cell2.setAttribute("title", data[i][1]);
+                cell3.setAttribute("title", data[i][2]);
+                cell4.setAttribute("title", data[i][3]);
             }
         }
 
