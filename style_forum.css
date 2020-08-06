@@ -19,8 +19,11 @@ body{
 }
 
 .wrapper{
-    display: grid;
-    grid-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 /* Navigation */
@@ -56,6 +59,7 @@ body{
     'search'
     'result'
     'create';
+    
 }
 
 .search{
@@ -141,6 +145,7 @@ body{
     background: var(--light);
     box-shadow: var(--shadow);
     margin-top: 50px;
+    width: 100%;
 }
 
 .result-table{
@@ -187,11 +192,19 @@ body{
 
 }
 
-@media(max-width: 500px){
+@media(max-width: 550px){
     .txt-search{
         width: 300px; 
     }
     
+    .forum{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 @media(max-width: 450px){
