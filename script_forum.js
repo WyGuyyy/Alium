@@ -37,6 +37,11 @@ function search(){
                 cell2.innerHTML = data[i][1];
                 cell3.innerHTML = data[i][2];
                 cell4.innerHTML = data[i][3];
+
+                cell1.setAttribute("title", data[i][0]);
+                cell2.setAttribute("title", data[i][1]);
+                cell3.setAttribute("title", data[i][2]);
+                cell4.setAttribute("title", data[i][3]);
             }
         }
 
@@ -50,4 +55,14 @@ function clearRows(){
     for(var j = table.rows.length - 1; j > 0; j--){
         table.deleteRow(j);
     }
+}
+
+document.getElementById("btnCreate").onclick = function() {displayAlert();}
+
+function displayAlert(){
+    var strMsg = "There are no CRUD operations available as this site is meant to " +
+                 "demonstrate front end responsiveness with vanilla HTML, CSS and JavaScript. " + 
+                 "Please check out the CRUD application using Angular and JS in my Bitbucket repository " + 
+                 "for CRUD endabled site. :)"
+    alert(strMsg);
 }
