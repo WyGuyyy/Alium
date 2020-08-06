@@ -366,7 +366,7 @@ body{
         align-self: center;
         max-width: 200px;
         max-height: 200px;
-        margin-right: 30px;
+        margin-right: 0px;
         box-shadow: var(--shadow);
     }
 
@@ -387,7 +387,7 @@ body{
     }
 
     .user2 img{
-        margin-right: 30px;
+        margin-right: 0px;
         align-self: center;
         max-width: 200px;
         max-height: 200px;
@@ -415,7 +415,7 @@ body{
         align-self: center;
         max-width: 200px;
         max-height: 200px;
-        margin-right: 30px;
+        margin-right: 0px;
         box-shadow: var(--shadow);
     }
   }
@@ -626,7 +626,7 @@ body{
 
     .text-social{
         background: var(--primary);
-        max-width: 300px;
+        max-width: 280px;
         padding: 10px;
         box-shadow: var(--shadow);
     }
@@ -651,7 +651,7 @@ body{
 
     .text-web{
         background: var(--primary);
-        max-width: 300px;
+        max-width: 280px;
         padding: 10px;
         box-shadow: var(--shadow);
     }
@@ -677,7 +677,7 @@ body{
 
     .text-email{
         background: var(--primary);
-        max-width: 300px;
+        max-width: 280px;
         padding: 10px;
         box-shadow: var(--shadow);
     }
@@ -702,7 +702,7 @@ body{
 
     .text-tv{
         background: var(--primary);
-        max-width: 300px;
+        max-width: 280px;
         padding: 10px;
         box-shadow: var(--shadow);
     }
@@ -727,8 +727,84 @@ body{
 
     .text-board{
         background: var(--primary);
-        max-width: 300px;
+        max-width: 280px;
         padding: 10px;
+        box-shadow: var(--shadow);
+    }
+
+    .user1{
+        grid-area: userx;
+        /*display: flex;*/
+        flex-direction: column;
+        /*grid-template-areas:
+        'image-user3 text-user3'
+        'image-user3 text-user3';
+        grid-gap: 20px;*/
+        width: 50%;
+        background: var(--primary);
+        padding: 10px;
+        box-shadow: var(--shadow);
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .user1 img{
+        /*grid-area: imageuser;*/
+        align-self: center;
+        margin-right: 0px;
+        max-width: 150px;
+        max-height: 150px;
+        box-shadow: var(--shadow);
+    }
+
+    .user2{
+        grid-area: userx;
+        /*display: flex;*/
+        flex-direction: column;
+        /*grid-template-areas:
+        'image-user3 text-user3'
+        'image-user3 text-user3';
+        grid-gap: 20px;*/
+        width: 50%;
+        background: var(--primary);
+        padding: 20px;
+        box-shadow: var(--shadow);
+        justify-content: center;
+        align-content: center;
+    }
+
+    .user2 img{
+        align-self: center;
+        margin-right: 0px;
+        max-width: 150px;
+        max-height: 150px;
+        box-shadow: var(--shadow);
+    }
+
+    .user3{
+        grid-area: userx;
+        /*display: flex;*/
+        flex-direction: column;
+        /*grid-template-areas:
+        'image-user3 text-user3'
+        'image-user3 text-user3';
+        grid-gap: 20px;*/
+        width: 50%;
+        background: var(--primary);
+        padding: 20px;
+        box-shadow: var(--shadow);
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .user3 img{
+        /*grid-area: imageuser;*/
+        margin-right: 0px;
+        max-width: 150px;
+        max-height: 150px;
         box-shadow: var(--shadow);
     }
 }
